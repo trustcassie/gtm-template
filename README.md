@@ -1,4 +1,4 @@
-**Cassie Google Tag Manager Consent Mode Integration**
+# Cassie Google Tag Manager Consent Mode Integration
 
 **Overview**
 
