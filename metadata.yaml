@@ -1,5 +1,5 @@
 homepage: "https://trustcassie.com/"
 documentation: "https://developer.trustcassie.com/"
 versions:
-  - sha: bbc349b2ea28b74f15fb6c1fbeb601edeab4ae70
+  - sha: 8a6371cccce745aa935fa7070ad4132123482c8a
     changeNotes: Initial release.
