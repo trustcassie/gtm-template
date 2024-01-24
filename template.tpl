@@ -172,7 +172,7 @@ ___TEMPLATE_PARAMETERS___
             ]
           }
         ],
-        "help": "A default consent state of \u0027denied\u0027 will apply until the user has submitted a consent. You can add different default states for users in different geographical regions. Please use ISO-3166-1 alpha-2 country codes for region values."
+        "help": "A default consent state of \u0027granted\u0027 will apply until the user has submitted a consent. You can add different default states for users in different geographical regions. Please use ISO-3166-1 alpha-2 country codes for region values."
       }
     ],
     "enablingConditions": [
