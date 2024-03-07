@@ -176,6 +176,48 @@ ___TEMPLATE_PARAMETERS___
                   "defaultValue": "granted"
                 },
                 "isUnique": false
+              },
+              {
+                "param": {
+                  "type": "SELECT",
+                  "name": "defaultAdUserData",
+                  "displayName": "ad_user_data",
+                  "macrosInSelect": false,
+                  "selectItems": [
+                    {
+                      "value": "granted",
+                      "displayValue": "Granted"
+                    },
+                    {
+                      "value": "denied",
+                      "displayValue": "Denied"
+                    }
+                  ],
+                  "simpleValueType": true,
+                  "defaultValue": "granted"
+                },
+                "isUnique": false
+              },
+              {
+                "param": {
+                  "type": "SELECT",
+                  "name": "defaultAdPersonalization",
+                  "displayName": "ad_personalization",
+                  "macrosInSelect": false,
+                  "selectItems": [
+                    {
+                      "value": "granted",
+                      "displayValue": "Granted"
+                    },
+                    {
+                      "value": "denied",
+                      "displayValue": "Denied"
+                    }
+                  ],
+                  "simpleValueType": true,
+                  "defaultValue": "granted"
+                },
+                "isUnique": false
               }
             ]
           }
@@ -253,6 +295,8 @@ function initDefaultConsent(){
       functionality_storage: regionRow.defaultFunctionalityStorage,
       personalization_storage: regionRow.defaultPersonalizationStorage,
       security_storage: regionRow.defaultSecurityStorage,
+      ad_user_data: regionRow.defaultAdUserData,
+      ad_personalization: regionRow.defaultAdPersonalization,
       region: regionRow.region.length > 0 ? regionRow.region :undefined
     };
   
@@ -272,19 +316,12 @@ function updateGtmChannels(){
   if(consent == null || consent.length == 0)return;
   //Create Consent Object
   let consentObject = {};
-
     consentObject.ad_storage = getConsentValue(consent,'ad_storage');
-
     consentObject.analytics_storage = getConsentValue(consent,'analytics_storage');
-
     consentObject.functionality_storage = getConsentValue(consent,'functionality_storage');
-
     consentObject.personalization_storage = getConsentValue(consent,'personalization_storage');
-
     consentObject.security_storage = getConsentValue(consent,'security_storage');
-  
     consentObject.ad_user_data = getConsentValue(consent,'ad_user_data');
-  
     consentObject.ad_personalization= getConsentValue(consent,'ad_personalization');
 
   //Dispatch the update.
@@ -941,6 +978,4 @@ scenarios: []
 
 ___NOTES___
 
-Created on 08/11/2023, 10:30:15
-
-
+Created on 07/03/2023, 10:09:15
