@@ -1,8 +1,8 @@
-# Cassie Google Tag Manager Consent Mode Integration
+# Cassie Google Tag Manager Consent Mode v2 Integration
 
 **Overview**
 
-The Google Tag Manager template is designed to seamlessly integrate Google Consent mode with a Cassie Cookie banner. Our Cassie CMP tag allows you to adjust how your Google tags behave based on the consent status of your users.
+The Google Tag Manager template is designed to seamlessly integrate Google Consent mode v2 with a Cassie Cookie banner. Our Cassie CMP tag allows you to adjust how your Google tags behave based on the consent status of your users.
 
 **Cassie CMP Tag Features**
 
@@ -20,9 +20,11 @@ This document assumes Cassie clients have configured their Cooke Scripts with th
 Cassie supports the following Consent Types:
 
 - ad\_storage
+- ad\_user\_data
 - analytics\_storage
 - functionality\_storage
 - personalization\_storage
+- ad\_personalization
 - security\_storage
 
 If clients require supporting documentation on this process it can be found in the Cassie Learning HUB.
