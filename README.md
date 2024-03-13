@@ -59,7 +59,7 @@ found in the Google documentation [here.](https://support.google.com/tagmanager/
 
 ![image](https://github.com/trustcassie/gtm-template/assets/156684279/517d2d0b-ab44-47df-9c17-cd3e15c75cf1)
 
-If you are unable to find the tag within the Gallery it can be downloaded and imported as a Custom Template from our[github repository.](https://github.com/trustcassie/gtm-template/)
+If you are unable to find the tag within the Gallery it can be downloaded and imported as a Custom Template from our [github repository.](https://github.com/trustcassie/gtm-template/)
 
 - Navigate to the github repository and select template.tpl from the menu at the top of the page.
   
@@ -153,7 +153,7 @@ Now that we have a Cassie CMP tag capturing updated user consent against GTM Con
 
 A number of tags within GTM are pre-configured to be consent aware and will show their Built-In Consent Checks in their Consent Settings, for example Google Analytics and Google Ads. Any tags that are pre-configured will not require additional consent checks and will automatically respond accordingly to the consent from the Cookie Banner.
 
-Any tags that are not pre-configured will require additional consent to fire. The below example highlights a tag that checks if consent has been granted for Consent state: functionality_storage before firing. This means that you can configure a tag to deploy based on consent state opt in status and your specific requirements.
+Any tags that are not pre-configured will require additional consent to fire. The below example highlights a tag that checks if consent has been granted for Consent state: ad_storage before firing. This means that you can configure a tag to deploy based on consent state opt in status and your specific requirements.
 
 **Set up steps**
 
@@ -164,7 +164,7 @@ Any tags that are not pre-configured will require additional consent to fire. Th
 - Select the consent state that you want to have a status of "granted" as a pre-requite for this tag to fire
 - Save
 
-![image](https://github.com/trustcassie/gtm-template/assets/156684279/28808c17-d46c-4e58-80ae-f7eed8b2a81d)
+![image](https://github.com/trustcassie/gtm-template/assets/156684279/c10ca39f-659d-4f4c-97ff-62d13ca61229)
 
 
 If you encounter any issues or have further questions, please refer to our support documentation or contact our support team for assistance.
