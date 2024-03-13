@@ -2,7 +2,7 @@
 
 **Overview**
 
-The Google Tag Manager template is designed to seamlessly integrate Google Consent mode v2 with a Cassie Cookie banner. Our Cassie CMP tag allows you to adjust how your Google tags behave based on the consent status of your users.
+The Google Tag Manager template is designed to seamlessly integrate a Cassie Cookie Banner with Google Consent mode v2. Our Cassie CMP tag allows you to adjust how your Google tags behave based on the consent status of your users.
 
 **Cassie CMP Tag Features**
 
@@ -27,7 +27,8 @@ Cassie supports the following Consent Types:
 - ad\_personalization
 - security\_storage
 
-If clients require supporting documentation on this process it can be found in the Cassie Learning HUB.
+More information on these consent types and the impact of granting and denying consent on their behavior can be
+found in the Google documentation [here.](https://support.google.com/tagmanager/answer/13802165?hl=en)
 
 **Google Tag Manager Installation Guide**
  Clients should follow the steps below to integrate our Cassie CMP tag within Google Tag Manager:
@@ -57,6 +58,30 @@ If clients require supporting documentation on this process it can be found in t
   - Selecting the tag will now add this to your tag library and you can make custom adjustments based on your specific requirements.
 
 ![image](https://github.com/trustcassie/gtm-template/assets/156684279/517d2d0b-ab44-47df-9c17-cd3e15c75cf1)
+
+If you are unable to find the tag within the Gallery it can be downloaded and imported as a Custom Template from our[github repository.](https://github.com/trustcassie/gtm-template/)
+
+- Navigate to the github repository and select template.tpl from the menu at the top of the page.
+  
+    ![image](https://github.com/trustcassie/gtm-template/assets/156684279/b8b0744a-969a-4395-b4af-ae90263350f3)
+
+- Select 'Download raw file' in the top right hand corner of the template.
+
+![image](https://github.com/trustcassie/gtm-template/assets/156684279/e03ef6d5-9819-4e9f-bd5f-5f0f25097ae6)
+
+- In your Google Tag Manager workspace select 'Templates' from the left hand menu and select 'New'.
+
+![image](https://github.com/trustcassie/gtm-template/assets/156684279/d016efac-086b-45b3-ac86-fdecdd88df96)
+
+- Click on the elipsis menu in the top right hand corner and select 'Import'.
+
+![image](https://github.com/trustcassie/gtm-template/assets/156684279/fe1ef510-4a39-4645-bfc4-a17376a7d000)
+
+- Select the template.tpl file from your downloads and click 'Save'.
+
+![image](https://github.com/trustcassie/gtm-template/assets/156684279/3df30efe-8f0f-4218-8f44-2421b22685fd)
+
+- The template will now appear in your tag library.
 
 **Step 3. Configure Cassie CMP Tag**
 
@@ -126,7 +151,9 @@ For firing to be triggered based upon the capture or change of a user consent we
 
 Now that we have a Cassie CMP tag capturing updated user consent against GTM Consent states, we can configure other tags to fire based on the stored consent.
 
-The below example highlights a tag that checks if consent has been granted for Consent state: Ad\_storage before firing. This means that you can configure a tag to deploy based on consent state opt In status and your specific requirements.
+A number of tags within GTM are pre-configured to be consent aware and will show their Built-In Consent Checks in their Consent Settings, for example Google Analytics and Google Ads. Any tags that are pre-configured will not require additional consent checks and will automatically respond accordingly to the consent from the Cookie Banner.
+
+Any tags that are not pre-configured will require additional consent to fire. The below example highlights a tag that checks if consent has been granted for Consent state: functionality_storage before firing. This means that you can configure a tag to deploy based on consent state opt in status and your specific requirements.
 
 **Set up steps**
 
@@ -137,6 +164,7 @@ The below example highlights a tag that checks if consent has been granted for C
 - Select the consent state that you want to have a status of "granted" as a pre-requite for this tag to fire
 - Save
 
-![image](https://github.com/trustcassie/gtm-template/assets/156684279/18525ec0-873d-4bd9-9539-73e28d17c37e)
+![image](https://github.com/trustcassie/gtm-template/assets/156684279/28808c17-d46c-4e58-80ae-f7eed8b2a81d)
+
 
 If you encounter any issues or have further questions, please refer to our support documentation or contact our support team for assistance.
