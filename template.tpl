@@ -284,8 +284,6 @@ const getConsentValue  = (consent, consentType) => {
 return returnValue;
 };
 
-
-// Set developer ID TODO
 gtagSet('developer_id.dNGJjND', true);
 function initDefaultConsent(){
   regionSettings.forEach(regionRow =>{
@@ -310,7 +308,22 @@ function updateGtmChannels(){
   //Get Current Consent.
   const consentString = getCookieValues(cassieGtmConsentCookie)[0];
   
-  const consent = json.parse(consentString);
+  let consent = null;
+ 
+  //Read consent as older-style JSON string
+  if (consentString && consentString.indexOf('{') == 0 || consentString.indexOf('[') == 0) {
+    consent = json.parse(consentString);
+  } 
+  else if (consentString) {
+    // If parsing fails, handle as the new delimited string
+    consent = consentString.split('|').map(pair => {
+        const keyValue = pair.split(':');
+        const obj = {}; 
+        obj[keyValue[0]] = keyValue[1]; 
+        return obj; 
+    });
+  }
+
   log(consent);
   //If has consent update gtm.
   if(consent == null || consent.length == 0)return;
