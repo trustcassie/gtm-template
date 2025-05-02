@@ -2,8 +2,10 @@ homepage: "https://trustcassie.com/"
 documentation: "https://developer.trustcassie.com/"
 versions:
   # Latest version
+  - sha: 9ed445994730cf9e332041f21d08e81641140ea7
+    changeNotes: Added support for new cookie values
+  # Previous versions
   - sha: 6b688d08fd7d96a2402068aaebf3043750e9eeef
     changeNotes: Added support for v2 Google Consent Mode fields.
-  # Previous versions
   - sha: 8a6371cccce745aa935fa7070ad4132123482c8a
     changeNotes: Initial release.
