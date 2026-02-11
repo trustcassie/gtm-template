@@ -2,7 +2,7 @@ homepage: "https://trustcassie.com/"
 documentation: "https://developer.trustcassie.com/"
 versions:
   # Latest version
-  - sha: f817097240596e6788680a42296c56793b777c64
+  - sha: 837e4d9c427dde2ffc1576978296a0956d9d700c
     changeNotes: Updates to resolve asynchronous race-condition
   # Previous versions
   - sha: 9ed445994730cf9e332041f21d08e81641140ea7
