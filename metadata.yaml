@@ -2,9 +2,11 @@ homepage: "https://trustcassie.com/"
 documentation: "https://developer.trustcassie.com/"
 versions:
   # Latest version
+  - sha: f817097240596e6788680a42296c56793b777c64
+    changeNotes: Updates to resolve asynchronous race-condition
+  # Previous versions
   - sha: 9ed445994730cf9e332041f21d08e81641140ea7
     changeNotes: Added support for RFC6265 cookie values.
-  # Previous versions
   - sha: 6b688d08fd7d96a2402068aaebf3043750e9eeef
     changeNotes: Added support for v2 Google Consent Mode fields.
   - sha: 8a6371cccce745aa935fa7070ad4132123482c8a
