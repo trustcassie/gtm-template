@@ -362,7 +362,6 @@ function main(){
   }
 }
 main();
-callInWindow('CassieWidgetLoader.Widget.addConsentListener', updateGtmChannels);
 data.gtmOnSuccess();
 
 
