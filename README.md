@@ -96,6 +96,8 @@ The access key field can be located within the Cassie CMP tag titled "Cassie Acc
 
 The Access Key can be obtained in the Cassie Administration Portal.
 
+⚠️ **Warning**: While keys are issued in UPPERCASE and are generally not case‑sensitive, this stage of the process requires all entries to be in lowercase. Testing will fail if this requirement is not followed. The absence of validation may make this constraint less apparent.
+
 ![image](https://github.com/trustcassie/gtm-template/assets/156684279/d8ba6984-fd42-405f-a811-46df274c9165)
 
 **3.2: Set up Location-Based Default Consent Mode Settings (Optional)**
@@ -129,18 +131,26 @@ The below example highlights the different consent settings per different region
 
 **Step 4: Configure Trigger**
 
-A firing trigger is required for the Cassie CMP tag to fire. The built in trigger "Consent Initialization - All Pages" can be used here or you can create a custom trigger based on your specific requirements.
+A firing trigger is required for the Cassie CMP tag to fire. In addition to the built-in trigger “Consent Initialization - All Pages” you also need to add a custom trigger.
+<img width="940" height="183" alt="image" src="https://github.com/user-attachments/assets/4b06bc3f-369f-4dfd-86d2-25450ad8db69" />
 
-![image](https://github.com/trustcassie/gtm-template/assets/156684279/877d8004-699a-48b4-aee1-db75ed4781db)
+**Step 4a: Creating a custom trigger**
 
-For firing to be triggered based upon the capture or change of a user consent we recommend creating a custom trigger.
+To create the custom trigger from within the tag:
+- Select ‘+’ in the top right of the Triggering section
+<img width="3091" height="1695" alt="image" src="https://github.com/user-attachments/assets/6f3c0b79-c527-456b-bf90-adfdc50e9178" />
 
-- Select 'New' in the Triggers section
-- Select 'Custom Event' from the Trigger Type drop down
-- Name your event 'CassieSubmittedConsent'
-- Select 'All custom events' for this trigger to fire on
+- Select ‘+ New Trigger’ in the top right 'Choose a trigger' screen
+- Name your trigger ‘CassieGtmConsent’
+<img width="3094" height="1146" alt="image" src="https://github.com/user-attachments/assets/0cdedfe4-c6ef-451d-80d4-aa02caec900f" />
 
-![image](https://github.com/trustcassie/gtm-template/assets/156684279/ed7d1ef5-3115-474a-b2a4-1a45004b2516)
+- Select the 'Trigger Configuration' section and choose 'Custom Event' trigger type
+<img width="3774" height="2004" alt="image" src="https://github.com/user-attachments/assets/f4e1fe34-3165-4171-8515-7843d49e080e" />
+
+- Enter the event name as 'CassieGtmConsent'
+- Select ‘All custom events’ for this trigger to fire on
+<img width="940" height="413" alt="image" src="https://github.com/user-attachments/assets/e7c5d942-bbb4-48d2-b3e2-ae550cb65484" />
+
 
 **Step 5: Save and Publish**
 
