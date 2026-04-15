@@ -15,7 +15,7 @@ Our custom tag extends the capabilities of Google Tag Manager by providing enhan
 
 **Prerequisites for Syrenis Clients**
 
-This document assumes Syrenis clients have configured their Cooke Scripts with the relevant Consent Types in the Syrenis Administration Portal.
+This document assumes Syrenis clients have configured their Cookie Scripts with the relevant Consent Types in the Syrenis Administration Portal.
 
 Syrenis supports the following Consent Types:
 
