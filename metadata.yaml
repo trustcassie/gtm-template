@@ -2,9 +2,11 @@ homepage: "https://syrenis.com/"
 documentation: "https://developer.syrenis.com/"
 versions:
   # Latest version
+  - sha: 970381ad4b03bf2d84ad3d30a39a948589a69f2b
+    changeNotes: Rebrand Cassie to Syrenis in user-facing strings.
+  # Previous versions
   - sha: 837e4d9c427dde2ffc1576978296a0956d9d700c
     changeNotes: Updates to resolve asynchronous race-condition
-  # Previous versions
   - sha: 9ed445994730cf9e332041f21d08e81641140ea7
     changeNotes: Added support for RFC6265 cookie values.
   - sha: 6b688d08fd7d96a2402068aaebf3043750e9eeef
